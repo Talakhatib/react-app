@@ -1,0 +1,13 @@
+.largeWord {
+    font-size: 100px; /* Adjust the size as needed */
+    font-style: italic;
+    font-weight: bold;
+  }
+
+.split-left{
+    width: 20%; float:left;
+}
+
+.split-right{
+    width: 80%; float:right;
+}
