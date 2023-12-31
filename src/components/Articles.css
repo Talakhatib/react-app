@@ -1,0 +1,17 @@
+.text-block {
+    position: absolute;
+    bottom: 2rem;
+    left: 20px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+@media only screen and (max-width: 580px) {
+    .image-h4-text{
+        font-size: 15;
+    }
+    .image-h3-text{
+        font-size:10px;
+    }
+  }
