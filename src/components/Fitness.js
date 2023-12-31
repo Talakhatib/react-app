@@ -4,7 +4,7 @@ import './Fitness.css';
 const Fitness = () => {
     return (
     <div className="container mt-4">
-       <h5 className='fw-bold'>FITNESS VIDEOS</h5>
+       <h3 className='fw-bold mb-4'>FITNESS VIDEOS</h3>
       <div className="row">
         <div className="col-md-4 mb-4">
           <div className="text-left">

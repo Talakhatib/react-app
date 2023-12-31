@@ -3,8 +3,8 @@ import './Articles.css';
 
 const Articles = () => {
     return (
-      <div className="container mt-4">
-      <h5 className='fw-bold'>TOP ARTICLES</h5>
+      <div className="container mt-5">
+      <h3 className='fw-bold mb-4'>TOP ARTICLES</h3>
       <div className="row ">
         <div className="col-md-8 col-12 position-relative">
           <img src="/assets/hiking.jpg" className="img-fluid" alt=""/>

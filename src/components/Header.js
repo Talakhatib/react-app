@@ -5,7 +5,7 @@ import './Header.css';
 const Header = () => {
     return (
       <header>
-        <nav className="navbar navbar-expand-lg navbar-light bg-lightgray bg-gradient"> 
+        <nav className="navbar navbar-expand-lg navbar-light"> 
           <div className='container-fluid'>
             <a className="navbar-brand" href="#">
               <img src="/assets/logo.svg" width="50" height="50" alt=""/>
@@ -16,12 +16,12 @@ const Header = () => {
           </button>
 
          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0" >
-            <li className="nav-item active ">
-              <a className="nav-link" href="/">Home </a>
+          <ul className="navbar-nav mx-auto mb-2 mb-lg-0" >
+            <li className="nav-item active">
+              <a className="nav-link fs-5" href="/">Home </a>
             </li>
-           <li className="nav-item ">
-             <a className="nav-link" href="/content">Content</a>
+           <li className="nav-item">
+             <a className="nav-link fs-5" href="/content">Content</a>
            </li>
           </ul>
          </div>
