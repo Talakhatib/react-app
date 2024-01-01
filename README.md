@@ -7,6 +7,7 @@ This app contain home page which display's all categories(articles, health meal 
 - node: 14.21.3
 - bootstrap: 5
 - react: 18.2.0
+- npm: 6.14.18
 
 
 
