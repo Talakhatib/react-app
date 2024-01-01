@@ -1,7 +1,13 @@
 import React from 'react';
 import './Articles.css';
+import categories from './categorydata'; // Assuming you have the people data array
 
 const Articles = () => {
+
+
+  const filter_category = 'article'; // Example age to filter
+
+  const filteredcategory = categories.filter((category) => category.categoryname === filter_category);
     return (
       <div className="container mt-5">
       <h3 className='fw-bold mb-4'>TOP ARTICLES</h3>
@@ -15,30 +21,18 @@ const Articles = () => {
             </div>
         </div>
         <div className="col-md-4 col-12 mt-md-0 mt-2">
+        {filteredcategory.map((category) => (
+          <a href={`content/${category.id}/`} className='text-decoration-none text-black' key={category.id}>
             <div className="row g-0 mb-2">
                 <div className="col-md-3 col-3">
-                    <img src="/assets/art1.jpg" className="img-fluid" alt=""/>
+                    <img src={category.image} className="img-fluid" alt=""/>
                 </div>
                 <div className="col-md-9 col-9 bg-white p-2 fw-bold text-capitalize">
-                    5 ways to tone your belly
+                   {category.title}
                 </div>
             </div>
-            <div className="row g-0 mb-2">
-                <div className="col-md-3 col-3">
-                    <img src="/assets/art2.jpg" className="img-fluid" alt=""/>
-                </div>
-                <div className="col-md-9 col-9 bg-white p-2 fw-bold text-capitalize">
-                    diet foods you didn't know you could eat.
-                </div>
-            </div>
-            <div className="row g-0 mb-2">
-                <div className="col-md-3 col-3">
-                    <img src="/assets/art3.jpg" className="img-fluid" alt=""/>
-                </div>
-                <div className="col-md-9 col-9 bg-white p-2 fw-bold text-capitalize">
-                    the history of arnold schwarzenegger
-                </div>
-            </div>
+            </a>
+            ))}
             <div className="mb-3">
                 <button className='btn btn-danger w-100'>All Articles</button>
             </div>
